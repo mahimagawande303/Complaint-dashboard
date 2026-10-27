@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Institution Complaint Monitor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Login screen -->
+  <section id="login" hidden>
+    <form id="login-form" class="login-card">
+      <h1>Institution Complaint Monitor</h1>
+      <p class="muted">Prototype with synthetic data. Pick a demo account or type one in.</p>
+      <label>Username <input id="lu" autocomplete="username" required></label>
+      <label>Password <input id="lp" type="password" autocomplete="current-password" required></label>
+      <button class="primary" type="submit">Log in</button>
+      <p id="login-error" class="error" role="alert"></p>
+      <div class="demo-accounts">
+        <span class="muted">Demo accounts (password: demo123)</span>
+        <div id="demo-buttons"></div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Main app -->
+  <div id="app" hidden>
+    <aside id="sidebar">
+      <div class="brand">Complaint<br>Monitor</div>
+      <nav id="nav"></nav>
+      <div class="whoami">
+        <div id="me-name"></div>
+        <div id="me-role" class="muted"></div>
+        <button id="logout" class="link">Log out</button>
+      </div>
+    </aside>
+    <main>
+      <div class="banner" id="banner"></div>
+      <div id="view" tabindex="-1"></div>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
