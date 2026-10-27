@@ -1,7 +1,7 @@
 # Institution Complaint Monitor (prototype)
 
 Synthetic-data prototype of a centralized complaint dashboard with cross-Bureau overlap detection.
-Full explanation (Hinglish): see GUIDE.md
+
 
 ## Run
     python -m venv venv
@@ -9,7 +9,7 @@ Full explanation (Hinglish): see GUIDE.md
     pip install -r requirements.txt
     python app.py
 Open http://127.0.0.1:5000  - demo password for every account: demo123
-(admin, head.office, a.sharma, r.verma, m.iyer, regional.viewer)
+(admin, head.office, a.sharma)
 
 ## Test
     python -m unittest -v
